@@ -399,7 +399,9 @@ class DominoPuzzleBuilder:
             bools = [p for (p, v) in touches[c]]
             solver.add(AtLeast(*bools, 1))
             solver.add(AtMost(*bools, 1))
-            
+        
+        # Cell value implication
+        for c in cells:
             constraints = []
             for (p, v) in touches[c]:
                 constraints.append(Implies(p, cell_val[c] == v))
