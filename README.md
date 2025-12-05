@@ -29,7 +29,7 @@ pip install -r requirements.txt
 ## 4. Run the application
 
 ```bash
-python3 pips-solver-interface.py
+python3 pips_solver_interface.py
 ```
 
 ## Done
